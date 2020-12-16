@@ -1,0 +1,83 @@
+@import "../../lib/color-picker@1.4.2/color-picker.css";
+
+.sequential-eeg-connectivity {
+  .sequential-animation-screen {
+    width: 100%;
+    height: 100%;
+    min-height: 700px;
+    background: #252626;
+    & > .animation-container {
+      margin: auto;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      .brain-background {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        background-image: url(./resources/fmri-brain-squared.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+      }
+      & > canvas.central-animation {
+        //
+      }
+    }
+  }
+  .module-settings {
+    overflow: auto;
+    background-color: #f7f7f7;
+    &,
+    input,
+    td {
+      font-size: 9pt;
+    }
+    th {
+      font-size: 10pt;
+      background-color: #d9d9d9;
+      font-weight: 600;
+    }
+    input {
+      height: 14pt;
+      line-height: 14pt;
+      border-width: 1px !important;
+      border-style: solid !important;
+      padding: 0 3px;
+    }
+    .switch > .check {
+      height: 14pt;
+      @displacement_y: -5px;
+      bottom: @displacement_y;
+      margin-top: @displacement_y;
+      &::after,
+      &::before {
+        height: 8pt;
+        width: 8pt;
+      }
+    }
+    & > .actual-container {
+      min-width: 100px;
+      min-height: 800px;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+        
+      input[mode-eval] {
+        font-family: "Courier New", Courier, monospace;
+      }
+    }
+  }
+  .module-content {
+    overflow: auto;
+    & > .actual-container {
+      min-width: 1200px;
+      min-height: 800px;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

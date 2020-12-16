@@ -1,0 +1,45 @@
+{
+  "name": "kbiostats.real_time_connectivity",
+  "version": "1.0.0",
+  "description": "Online Toolbox for Vector Autoregressive Models",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "keywords": [
+    "statistics",
+    "connectivity"
+  ],
+  "author": "MAP-O",
+  "license": "MIT",
+  "dependencies": {
+    "@blueprintjs/core": "^3.24.0",
+    "@inlet/react-pixi": "^1.2.3",
+    "color-input": "^0.0.1-alpha.7",
+    "colormap": "^2.3.1",
+    "fabricjs": "^1.0.0",
+    "jstat": "^1.9.2",
+    "kefir": "^3.8.6",
+    "konva": "^4.1.6",
+    "opc-eeg-positions": "link:./local_modules/opc-eeg-positions@1.0.0",
+    "paper": "^0.12.4",
+    "pixi.js": "4.8.6",
+    "react": "^16.13.0",
+    "react-color": "^2.18.0",
+    "react-dom": "^16.13.0",
+    "reactcss": "^1.2.3",
+    "two.js": "^0.7.0-stable.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "less": "^3.11.1",
+    "parcel": "^2.0.0-beta.1",
+    "parcel-bundler": "^1.12.4",
+    "typescript": "^3.8.3"
+  },
+  "alias": {
+    "opc-eeg-positions": "./local_modules/opc-eeg-positions@1.0.0"
+  }
+}
